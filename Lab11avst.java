@@ -26,13 +26,15 @@ public class Lab11avst
         // Write a loop that changes ALL numbers to prime (true) in the array.
         for(int k = 2; k < primes.length; k++) {
             // Change all the values to true here
-
+            primes[k] = true;
         }
 
         // Step 2: This is where you remove the primes
         // To start, JUST remove the multiples of 2
-        for(int k = 2; k < primes.length; k++) {
-
+        for() {
+            for (int k = 2 * 2; k < primes.length; k += 2) {
+                primes[k] = false;
+            }
         }
 
     }
@@ -43,7 +45,7 @@ public class Lab11avst
         System.out.println();
 
         for(int k = 2; k < primes.length; k++){
-            if(){ // Write the Condition yourself
+            if(primes[k] == true){ // Write the Condition yourself
                 System.out.print(k + " ");
             }
         }
